@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var AdicionalCatupiry_1 = require("./AdicionalCatupiry");
+var AdicionalQueijo_1 = require("./AdicionalQueijo");
+var Pastel_1 = require("./Pastel");
+var meuLanche = new Pastel_1.Pastel;
+console.log("\n==========================\n--- MONTAGEM DO LANCHE ---\n==========================\nLANCHE BASICO -->\nDescri\u00E7\u00E3o: ".concat(meuLanche.getDescricao, "\nPre\u00E7o: ").concat(meuLanche.getPreco, "\n==========================\n"));
+meuLanche = new AdicionalQueijo_1.AdicionalQueijo(meuLanche);
+console.log("\n==========================\nLANCHE C/ QUEIJO -->\nDescri\u00E7\u00E3o: ".concat(meuLanche.getDescricao, "\nPre\u00E7o: ").concat(meuLanche.getPreco, "\n==========================\n"));
+meuLanche = new AdicionalCatupiry_1.AdicionalCatupiry(meuLanche);
+console.log("\n==========================\nLANCHE C/ CATUPIRY -->\nDescri\u00E7\u00E3o: ".concat(meuLanche.getDescricao, "\nPre\u00E7o: ").concat(meuLanche.getPreco, "\n==========================\n"));

@@ -1,3 +1,5 @@
+import { AdicionalCatupiry } from "./AdicionalCatupiry";
+import { AdicionalQueijo } from "./AdicionalQueijo";
 import { Lanche } from "./Lanche";
 import { Pastel } from "./Pastel";
 
@@ -13,11 +15,21 @@ Preço: ${meuLanche.getPreco}
 ==========================
 `)
 
-meuLanche = 
+meuLanche = new AdicionalQueijo(meuLanche)
 
 console.log(`
 ==========================
 LANCHE C/ QUEIJO -->
+Descrição: ${meuLanche.getDescricao}
+Preço: ${meuLanche.getPreco}
+==========================
+`)
+
+meuLanche = new AdicionalCatupiry(meuLanche)
+
+console.log(`
+==========================
+LANCHE C/ CATUPIRY -->
 Descrição: ${meuLanche.getDescricao}
 Preço: ${meuLanche.getPreco}
 ==========================
