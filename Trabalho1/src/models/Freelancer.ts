@@ -26,4 +26,10 @@ export class Freelancer {
     exibirServicos(): void {
         console.table(this.servicos)
     }
+
+    listarFeedbacks() {
+        this.feedbacks.forEach((f, i) => {
+            console.log(`${i + 1}.  ${f.nota} - ${f.texto}`)
+        })
+    }
 }
