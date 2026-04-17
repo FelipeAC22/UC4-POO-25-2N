@@ -19,17 +19,22 @@ export class Freelancer {
         let soma: number = 0
         for (let i = 0; i < this.feedbacks.length; i++) {
             soma += this.feedbacks[i].nota
-
         }
+
         return soma / this.feedbacks.length
     }
-    exibirServicos(): void {
-        console.table(this.servicos)
+    
+    listarServicos(): void {
+        console.log(`Servicos de ${this.nome}:`)
+        this.servicos.forEach((servico, i) => {
+            console.log(
+                `${i + 1}. ${servico.getNome()} - R$ ${servico.getValor()}`)
+        })
     }
 
-    listarFeedbacks() {
-        this.feedbacks.forEach((f, i) => {
-            console.log(`${i + 1}.  ${f.nota} - ${f.texto}`)
+    listarFeedbacks(): void {
+        this.feedbacks.forEach((feedback, i) => {
+            console.log(`${i + 1}.  ${feedback.nota} - ${feedback.texto}`)
         })
     }
 }
