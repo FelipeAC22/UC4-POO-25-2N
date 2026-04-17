@@ -1,11 +1,11 @@
-import { Freelancer } from "../models/Freelancer"
-import { Servico } from "../models/Servico"
-import { DecoratorBonus } from "../decorators/DecoratorBonus"
-import { DecoratorProridade } from "../decorators/DecoratorPrioridade"
-import { DecoratorServico } from "../decorators/DecoratorServico"
-import { DecoratorUrgencia } from "../decorators/DecoratorUrgencia"
-import { ServicoConcreto } from "../models/ServicoConcreto"
-import { Feedback } from "../models/Feedback"
+import { Freelancer } from "../models/Freelancer";
+import { Servico } from "../models/Servico";
+import { DecoratorBonus } from "../decorators/DecoratorBonus";
+import { DecoratorProridade } from "../decorators/DecoratorPrioridade";
+import { DecoratorServico } from "../decorators/DecoratorServico";
+import { DecoratorUrgencia } from "../decorators/DecoratorUrgencia";
+import { ServicoConcreto } from "../models/ServicoConcreto";
+import { Feedback } from "../models/Feedback";
 
 const servicoBase = new ServicoConcreto("Criação de Logo", 200)
 

@@ -1,4 +1,4 @@
-import { DecoratorServico } from "./DecoratorServico"
+import { DecoratorServico } from "./DecoratorServico";
 
 export class DecoratorProridade extends DecoratorServico {
     getNome(): string {
@@ -6,6 +6,6 @@ export class DecoratorProridade extends DecoratorServico {
     }
 
     getValor(): number {
-        return this.servico.getValor() + 30;
+        return this.servico.getValor() + 30
     }
 }

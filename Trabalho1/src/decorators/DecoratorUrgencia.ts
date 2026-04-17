@@ -1,4 +1,4 @@
-import { DecoratorServico } from "./DecoratorServico"
+import { DecoratorServico } from "./DecoratorServico";
 
 export class DecoratorUrgencia extends DecoratorServico {
   getValor(): number {
