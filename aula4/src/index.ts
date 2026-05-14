@@ -1,4 +1,3 @@
-/*
 class hobbit {
     private nome: string
     private idade: number
@@ -18,7 +17,7 @@ let frodoBolseiro = new hobbit("Frodo", 70)
 
 frodoBolseiro.fazerAniversario()
 console.log(`idade do hobbit: ${frodoBolseiro.mostrarIdade()}`);
-*/
+
 
 class espadaElfica {
     private durabilidade: number
